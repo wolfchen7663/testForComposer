@@ -1,12 +1,23 @@
 {
-    "name": "wolfchen/test-for-composer",
-    "description": "a demo for learing composer",
-    "type": "project",
-    "authors": [
-        {
-            "name": "wolfchen7663",
-            "email": "wolfchen7663@163.com"
-        }
+  "name": "wolfchen/test-for-composer",
+  "description": "a demo for learing composer",
+  "type": "project",
+  "authors": [
+    {
+      "name": "wolfchen7663",
+      "email": "wolfchen7663@163.com"
+    }
+  ],
+  "require": {
+    "gregwar/captcha": "1.*"
+  },
+  "autoload": {
+    "files": [
+      "core/functions.php"
     ],
-    "require": {}
+    "psr-4": {
+      "core\\": "core/",
+      "web\\": "web/"
+    }
+  }
 }
